@@ -1,6 +1,8 @@
-
 include Lwt_log_core
-module D = Dom
+
+module Js = Js_of_ocaml.Js
+module D = Js_of_ocaml.Dom
+module Dom_html = Js_of_ocaml.Dom_html
 
 let default_handler : (Js.js_string Js.t -> Js.js_string Js.t -> int -> bool Js.t) option ref = ref
     (Some (fun msg url line ->

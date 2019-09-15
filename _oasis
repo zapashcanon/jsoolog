@@ -15,7 +15,7 @@ Library jsoolog
   Path:       ./
   BuildTools: ocamlbuild
   Modules:    Jsoolog
-  BuildDepends: lwt.log, lwt.react, js_of_ocaml, lwt.syntax,js_of_ocaml.syntax
+  BuildDepends: lwt_log, lwt_react, js_of_ocaml, lwt_camlp4, js_of_ocaml-camlp4
   Install: true
   CompiledObject: byte
 

@@ -27,7 +27,7 @@ module SimpleDom : sig
   val clear : t -> unit
 
   (** Get the Dom element from a dom logger *)
-  val dom : t -> Dom_html.divElement Js.t
+  val dom : t -> Js_of_ocaml.Dom_html.divElement Js_of_ocaml.Js.t
 
 end
 
@@ -47,6 +47,6 @@ module Dom : sig
   val add_command_handler : t -> (string -> unit Lwt.t) -> unit
 
   (** Get the Dom element from a dom logger *)
-  val dom : t -> Dom_html.divElement Js.t
+  val dom : t -> Js_of_ocaml.Dom_html.divElement Js_of_ocaml.Js.t
 
 end

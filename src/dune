@@ -1,0 +1,6 @@
+(library
+  (name jsoolog)
+  (public_name jsoolog)
+  (modules jsoolog)
+  (wrapped false)
+  (libraries lwt_log lwt_react js_of_ocaml lwt_camlp4 js_of_ocaml-camlp4))
